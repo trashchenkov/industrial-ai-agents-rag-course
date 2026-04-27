@@ -1,0 +1,46 @@
+# Промышленная разработка AI-агентов — Topic 7 RAG dependencies
+# Python: >=3.12,<3.13
+
+# LangChain / LangGraph
+langchain>=1.2,<2.0
+langchain-core>=1.0,<2.0
+langchain-text-splitters>=1.0,<2.0
+langchain-community>=0.4,<0.5
+langgraph>=1.0,<2.0
+deepagents>=0.5,<0.6
+
+# GigaChat
+langchain-gigachat-lc1==0.4.0b2
+
+# Vector store
+langchain-chroma>=1.0,<2.0
+chromadb>=1.5,<2.0
+
+# Lexical retrieval
+rank-bm25>=0.2.2,<0.3.0
+
+# Document loading
+pypdf>=6.0,<7.0
+beautifulsoup4>=4.12,<5.0
+
+# GraphRAG
+kuzu>=0.11,<0.12
+pandas>=2.2,<3.0
+tqdm>=4.66,<5.0
+
+# Notebook/runtime utilities
+python-dotenv>=1.0,<2.0
+jupyter>=1.1,<2.0
+ipykernel>=6.29,<7.0
+typing-extensions>=4.12,<5.0
+
+# Observability for notebooks with LLM/RAG calls (02+)
+# Phoenix packages are pinned as a tested compatible set for this course.
+arize-phoenix==13.12.0
+arize-phoenix-evals==2.11.0
+arize-phoenix-otel==0.15.0
+openinference-instrumentation-langchain==0.1.61
+# FastAPI/Starlette are pinned because Phoenix 13.12 UI is not compatible with Starlette 1.0.
+fastapi==0.135.1
+starlette==0.52.1
+uvicorn==0.41.0

@@ -1,0 +1,81 @@
+/**
+ * Корпоративная тема Slidev (заготовка)
+ * Палитра и типографика: design-tokens.md
+ * Подключение: в headmatter указать themeConfig, fonts и добавить стили в проект Slidev.
+ */
+
+/* --- Палитра (совпадает с design-tokens.md) --- */
+:root {
+  --corp-green: #56ff71;
+  --corp-sky: #62ecff;
+  --corp-blue-dark: #1032a1;
+  --corp-black: #000000;
+  --corp-green-pastel: #adffc6;
+  --corp-sky-pastel: #bafffb;
+  --corp-blue-mid: #0882ff;
+  --corp-white: #ffffff;
+
+  /* Семантика для Slidev (можно переопределить через themeConfig) */
+  --slidev-theme-primary: var(--corp-blue-dark);
+  --slidev-theme-accent: var(--corp-green);
+  --slidev-theme-background: var(--corp-blue-dark);
+}
+
+/* --- Шрифт SB Sans Display (локально: public/fonts/) --- */
+@font-face {
+  font-family: "SB Sans Display";
+  src:
+    local("SB Sans Display"),
+    url("/fonts/SBSansDisplay-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "SB Sans Display";
+  src:
+    local("SB Sans Display Semibold"),
+    url("/fonts/SBSansDisplay-Semibold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "SB Sans Display";
+  src:
+    local("SB Sans Display Light"),
+    url("/fonts/SBSansDisplay-Light.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* --- Базовый слой слайдов --- */
+.slidev-layout {
+  font-family: "SB Sans Display", ui-sans-serif, system-ui, sans-serif;
+  /* Градиент: тёмный зелёно-голубой → бледно-голубой (design-tokens.md) */
+  background: linear-gradient(
+    135deg,
+    var(--corp-blue-dark) 0%,
+    #0f4c6a 35%,
+    var(--corp-sky-pastel) 80%,
+    var(--corp-sky) 100%
+  );
+  color: var(--corp-white);
+}
+
+.slidev-layout h1,
+.slidev-layout h2 {
+  color: var(--corp-white);
+  font-weight: 600;
+}
+
+.slidev-layout a {
+  color: var(--corp-sky);
+}
+
+.slidev-layout strong {
+  color: var(--corp-green);
+}
