@@ -13,16 +13,13 @@ fonts:
   weights: '300,400,600'
   italic: false
 transition: slide-left
+layout: corporate-title-bg
 defaults:
   layout: corporate-default-bg
 themeConfig:
   primary: '#1032A1'
   accent: '#56FF71'
   background: '#1032A1'
----
-
----
-layout: corporate-title-bg
 ---
 
 # Тема 7: RAG
