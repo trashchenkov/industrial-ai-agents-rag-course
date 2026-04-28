@@ -32,6 +32,15 @@ rag_course_repo/
 
 ## Быстрый старт
 
+Сначала клонируйте репозиторий и перейдите в его директорию:
+
+```bash
+git clone https://github.com/trashchenkov/industrial-ai-agents-rag-course.git
+cd industrial-ai-agents-rag-course
+```
+
+Затем создайте окружение и установите зависимости:
+
 ```bash
 python3.12 -m venv .venv
 source .venv/bin/activate
