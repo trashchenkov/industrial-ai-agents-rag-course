@@ -46,22 +46,19 @@ cd industrial-ai-agents-rag-course
 macOS / Linux:
 
 ```bash
-python3.12 --version
-python3.11 --version
+which -a python python3 python3.11 python3.12 python3.13
 python3 --version
-python --version
 ```
+
+На macOS / Linux нет единой стандартной команды, которая гарантированно покажет все установленные версии Python. Команда `which -a` показывает найденные в `PATH` варианты; если нужной версии нет в списке, установите Python 3.12 или добавьте его в `PATH`.
 
 Windows PowerShell / cmd:
 
 ```powershell
 py -0p
-py -3.12 --version
-py -3.11 --version
-python --version
 ```
 
-Если команда не найдена или нужной версии нет в списке, установите Python 3.12 с python.org или через пакетный менеджер вашей ОС.
+На Windows команда `py -0p` показывает версии Python, которые видит Python Launcher, вместе с путями к ним. Если нужной версии нет в списке, установите Python 3.12 с python.org.
 
 Создание окружения:
 
