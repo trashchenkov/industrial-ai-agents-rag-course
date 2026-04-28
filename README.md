@@ -39,7 +39,9 @@ git clone https://github.com/trashchenkov/industrial-ai-agents-rag-course.git
 cd industrial-ai-agents-rag-course
 ```
 
-Затем создайте окружение и установите зависимости:
+Затем создайте окружение и установите зависимости. Материалы рассчитаны на Python 3.12. Если команда `python3.12` не найдена, установите Python 3.12 или используйте команду, которая в вашей системе запускает именно эту версию Python.
+
+macOS / Linux:
 
 ```bash
 python3.12 -m venv .venv
@@ -47,6 +49,26 @@ source .venv/bin/activate
 python -m pip install -r requirements.txt
 python -m ipykernel install --user --name industrial-ai-agents-rag --display-name "Industrial AI Agents RAG"
 cp .env.example .env
+```
+
+Windows PowerShell:
+
+```powershell
+py -3.12 -m venv .venv
+.\.venv\Scripts\Activate.ps1
+python -m pip install -r requirements.txt
+python -m ipykernel install --user --name industrial-ai-agents-rag --display-name "Industrial AI Agents RAG"
+copy .env.example .env
+```
+
+Windows cmd:
+
+```bat
+py -3.12 -m venv .venv
+.venv\Scripts\activate.bat
+python -m pip install -r requirements.txt
+python -m ipykernel install --user --name industrial-ai-agents-rag --display-name "Industrial AI Agents RAG"
+copy .env.example .env
 ```
 
 После запуска Jupyter выберите kernel **Industrial AI Agents RAG**. Это важно: если notebook открыт в другом kernel, он может не видеть зависимости из `requirements.txt`.
